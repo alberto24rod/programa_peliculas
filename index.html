@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+	<title>Peliculas </title>
+	
+</head>
+<body>
+	<header>
+		<div class="contenedor">
+			<h2 class="cabecera">Peliculas chidas</h2>
+			<nav>
+				<a href="#" class="activo">Inicio</a>
+				
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<div class="pelicula-principal">
+			<div class="contenedor">
+				<h3 class="titulo">Intrucciónes de uso del programa</h3>
+				<p class="descripcion">
+					Te explico como funciona el programa :)  debes agregar un link de Youtube corto que no supere los 5 min, quizas un poco mas. pero no quieras reproducir un video de mas de 1 hora que te mandara error. Tienes un espacio para egregar una pequeña descripcion. Tambien te permite seleccionar una imagen de tus archivos, la cual al precionar el boton Agregar te servira para reproducir tu video.  
+				</p>
+				<button role="button" class="boton"><i class="fas fa-play"></i>Reproducir</button>
+				
+			</div>
+		</div>
+		
+		<div id="videoPlayer">
+			<h2>Reproductor de Videos</h2>
+			<input type="text" id="videoLink" class="large" placeholder="Link del video youtube :)">
+			<input type="text" id="videoDescription" class="large" placeholder="Descripción del video">
+			<input type="file" id="videoThumbnail" class="large" accept="image/*">
+			<button onclick="addVideo()" class="large-button green-button">Agregar</button>
+			<div id="videoList"></div>
+			<div id="videoContainer"></div>
+		</div>
+		<div class="peliculas-recomendadas contenedor">
+			<div class="contenedor-titulo-controles">
+				<h3>Películas Recomendadas</h3>
+				<div class="indicadores"></div>
+			</div>
+
+			<div class="contenedor-principal">
+				<button role="button" id="flecha-izquierda" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
+
+
+
+
+
+				<div class="contenedor-carousel">
+					<div class="carousel">
+						<div class="pelicula">
+							<a href="#"><img src="img/1.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/2.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/3.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/4.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/5.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/6.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/7.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/1.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/2.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/3.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/1.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/2.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/3.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/4.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/5.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/6.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/7.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/1.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/2.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/3.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/4.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+
+				<button role="button" id="flecha-derecha" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
+			</div>
+		</div>
+	</main>
+
+
+	<script src="https://www.youtube.com/iframe_api"></script>
+
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	<script src="js/pelis.js"></script>
+</body>
+</html>
